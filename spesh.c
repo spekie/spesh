@@ -36,10 +36,11 @@ void execute_command(char *command) {
 }
 
 int main() {
+	printf("spesh, the Simple Program Execution SHell\n\n");
     char command[MAX_CMD_LEN];
 
     while (1) {
-        printf("myshell> ");
+        printf("spesh >$ ");
         
         if (fgets(command, sizeof(command), stdin) == NULL) {
             if (feof(stdin)) {
